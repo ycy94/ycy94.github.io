@@ -1,82 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Lato|Open+Sans|Roboto" rel="stylesheet"><!--Google font-->
+	<!--fix for languages appearing correctly-->
+	<meta charset="utf-8">
+	<!--quick fix to scale down web page for mobile and tablet users-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<!--Bootstrap CSS--> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!--Font awesome assets-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Jquery,Popper Javascript,Bootstrap Javascript-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<!--Importing my CSS-->
+	<link rel="stylesheet" href="portfolio.css">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--font awesome icons-->
 
-	<link rel="stylesheet" href="portfolio.css"/>
+	<title>My Portfolio V2</title>
 
-	<title>My Portfolio</title>
 </head>
-
 <body>
+	<!--Importing Javascript-->
+	<script src="scripts.js"></script>
+
+
 	<article>
+		<!--Navigation bar-->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#"><img src="pcmr.png"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		  </button>
 
-		<header> <!--Intro about myself-->
-			<h1>Yong Che Yik<br/>Aspiring Software Engineer<hr></h1>
-			<p>I am a student currently attending the 10 week long full-stack web development bootcamp at NEXT Academy. I take pleasure in building everything from small business websites to lavish interactive web apps. If you are a business seeking a presence on the internet or an employer looking to hire, you can get in touch with me <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ/" target="_blank">here</a></p>			
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item active">
+			        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">About</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Featured</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Other</a>
+			      </li>	  	      
+			    </ul>
+			    <ul class ="navbar-nav ml-auto">
+			    	<li class="nav-item">
+			        <a class="nav-link" href="#">Contact me</a>
+			      	</li>
+			    </ul> 
+		  	</div>
+		</nav>
+
+
+	<!--Article and header are for semantics-->
+	<article>
+		<header>
+		<div class="jumbotron text-center">	
+			<h1>Yong Che Yik</h1>
+			<p>Aspiring Software Engineer</p>
+		</div>
 		</header>
-
-
-		<section> <!--My ongoing projects-->
-			<h2>Ongoing Projects</h2>
-			<table>
-					<tr>
-						<th>My work</th>
-						<th>Description</th>
-						<th>Expected date of completion</th>
-					</tr>
-					<tr>
-						<td>This Portfolio Page</td>
-						<td>A webpage that tells people about the things I have completed and update them about my upcoming projects.</td>
-						<td>Unknown</td>
-					</tr>	
-				</table>
+	</article>	
+		<!--About me section-->
+		<section>
+		<div class="container">
+			<h2>About me</h2>
+			<h4>I'm a student at NEXT Academy Kuala Lumpur currently undertaking the ten week long Full-Stack Web Development course.</h4>
+			<p>I take pleasure in accepting challenges from small business websites to interactive web apps. If you are a business seeking a presence on the internet or an employer looking to hire, please do get in touch with me.</p>
+		</div>
 		</section>
 
+		<!--Featured Work section-->
+		<section>
+		<div class="container">
+			<h2 class="text-center">Featured Work</h2>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">
+						<div class="card" style="width: 18rem;">
+						  <img class="card-img-top" src="http://via.placeholder.com/300" alt="Card image cap">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">View more...</a>
+						 </div>
+						</div>
+					</div>
+						
+					<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">			
+						<div class="card" style="width: 18rem;">
+						  <img class="card-img-top" src="http://via.placeholder.com/300" alt="Card image cap">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">View more...</a>
+						 </div>
+						</div>
+					</div>	
 
-		<section><!--My completed projects-->
-			<h2>Completed Projects</h2>
-			<table>
-					<tr>
-						<th>My work</th>
-						<th>Description</th>
-						<th>Date of completion</th>
-					</tr>
-					<tr>
-						<td>My First HTML</td>
-						<td>A very simple HTML exercise.</td>
-						<td>06/08/2018</td>
-					</tr>
-					<tr>
-						<td>My First CSS</td>
-						<td>A very simple CSS exercise.</td>
-						<td>07/08/2018</td>
-				</table>
+					<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">	
+						<div class="card" style="width: 18rem;">
+						  <img class="card-img-top" src="http://via.placeholder.com/300" alt="Card image cap">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">View more...</a>
+						  </div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">	
+						<div class="card" style="width: 18rem;">
+						  <img class="card-img-top" src="http://via.placeholder.com/300" alt="Card image cap">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">View more...</a>
+						  </div>
+						</div>
+					</div>
+				</div>
 		</section>
 
-		
-		<section><!--Social Media facebook/twitter/instagram/linkedin-->
-			<h2>Find me on social media</h2>
-			<a href="https://www.facebook.com/"target="_blank">
-			<button>Facebook <i class="fa fa-facebook-square"></i></button>	
-			</a>
+		<!--Other Work section-->
+		<section>
+		<div class="container">
+			<h2 class="text-center">Check Out Some Of My Other Work</h2>
+				<div class="row">
+					<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">
+						<div class="card" style="width: 18rem;">
+						  <img class="card-img-top" src="http://via.placeholder.com/300" alt="Card image cap">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">View more...</a>
+						 </div>
+						</div>
+					</div>
+						
+					<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">			
+						<div class="card" style="width: 18rem;">
+						  <img class="card-img-top" src="http://via.placeholder.com/300" alt="Card image cap">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">View more...</a>
+						 </div>
+						</div>
+					</div>
 
-			<a href ="https://www.linkedin.com/"target="_blank">
-			<button>LinkedIn <i class="fa fa-linkedin-square"></i></button>	
-			</a>
+					<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">	
+						<div class="card" style="width: 18rem;">
+						  <img class="card-img-top" src="http://via.placeholder.com/300" alt="Card image cap">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">View more...</a>
+						  </div>
+						</div>
+					</div>	
 
-			<a href="https://www.twitter.com/"target="_blank">
-			<button>Twitter<i class="fa fa-twitter-square"></i></button>
-			</a>
+					<div class="col-xs-12 col-sm-4 col-md-6 col-lg-4">	
+						<div class="card" style="width: 18rem;">
+						  <img class="card-img-top" src="http://via.placeholder.com/300" alt="Card image cap">
+						  <div class="card-body">
+						    <h5 class="card-title">Card title</h5>
+						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+						    <a href="#" class="btn btn-primary">View more...</a>
+						  </div>
+						</div>
+					</div>
+		</div>
+		</section>
 
-			<a href="https://github.com/ycy94/ycy94.github.io"target="_blank">
-			<button>Github <i class="fa fa-github-square"></i></button>
-			</a>
-		</section>	
+		<!--Contact Me-->
+		<section>
+		<div class="container-fluid bg-grey">
+			<h2 class="text-center">Looking to start a project? Lets Talk.</h2>
+				<div class="row">
+					<div class="col-sm-5">
+						<p>Contact me and i'll get back to you as soon as possible.</p>
+				      	<p><i class="fa fa-map-marker" aria-hidden="true"></i> Based in Kuala Lumpur, Malaysia</p>
+				      	<p><i class="fa fa-phone-square" aria-hidden="true"></i> +60 123456789</p>
+				      	<p><i class="fa fa-envelope" aria-hidden="true"></i> yongcheyik94@gmail.com</p> 
+				    </div>
 
-	</article>
+				    <div class ="col-sm-7">
+				    	<div class="row">
+				    		<div class="col-sm-6 form-group">
+				    			<input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+				    		</div>
+
+				    		<div class="col-sm-6 form-group">
+				    			<input class="form-control" id="email" name="email" placeholder="email" type="email" required>
+				    		</div>
+				    	</div>
+
+						   <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+						      	<div class="row">
+						        	<div class="col-sm-12 form-group">
+						          <button class="btn btn-default pull-right" type="submit">Send</button>
+						        	</div>
+						      	</div> 
+						    	</div>
+						  	</div>
+						</div>				    	
+		</div>
+		</section>
 </body>
 </html>
